@@ -490,7 +490,7 @@ export default function Homepage() {
               className="text-[12px] tracking-wide"
               style={{ fontFamily: "'Inter', sans-serif", color: NAVY }}
             >
-              info@diplomatic-intl.com
+              info@rmlingo.com
             </span>
           </div>
         </div>

@@ -4,7 +4,7 @@
  *  - Static assets: stale-while-revalidate (serve from cache, update in background).
  * Bump the CACHE name on each deployment that changes the app shell.
  */
-const CACHE = 'diplomatic-shell-v1'
+const CACHE = 'rmlingo-shell-v1'
 
 self.addEventListener('install', () => {
   self.skipWaiting()

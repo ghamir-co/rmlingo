@@ -88,11 +88,11 @@
   --sidebar: 165 36% 18%;
   --sidebar-foreground: 42 40% 96%;
   --sidebar-border: 165 28% 30%;
-  --sidebar-primary: 38 74% 44%;
+  --sidebar-primary: 38 70% 34%;
   --sidebar-primary-foreground: 42 40% 96%;
-  --sidebar-accent: 38 74% 44%;
+  --sidebar-accent: 38 70% 34%;
   --sidebar-accent-foreground: 42 40% 96%;
-  --sidebar-ring: 38 74% 44%;
+  --sidebar-ring: 38 70% 34%;
 
   --popover: 42 42% 97%;
   --popover-foreground: 165 32% 16%;
@@ -107,17 +107,17 @@
   --muted: 40 28% 88%;
   --muted-foreground: 40 14% 36%; /* warm taupe (AA on sand) */
 
-  --accent: 38 74% 44%; /* rich gold #C68A1E */
+  --accent: 38 70% 34%; /* deep brass gold (WCAG AA text on sand) */
   --accent-foreground: 42 40% 96%;
 
   --destructive: 0 58% 44%;
   --destructive-foreground: 42 40% 96%;
 
   --input: 165 36% 20%; /* emerald borders on inputs */
-  --ring: 38 74% 44%; /* gold ring */
+  --ring: 38 70% 34%; /* gold ring */
 
   --chart-1: 165 36% 24%;
-  --chart-2: 38 74% 44%;
+  --chart-2: 38 70% 34%;
   --chart-3: 40 24% 55%;
   --chart-4: 165 30% 40%;
   --chart-5: 42 40% 70%;

@@ -533,7 +533,7 @@ export default function HomepageMobile() {
               className="text-[0.7rem] tracking-wide"
               style={{ fontFamily: "'Inter', sans-serif", color: NAVY }}
             >
-              info@diplomatic-intl.com
+              info@rmlingo.com
             </span>
           </div>
         </div>

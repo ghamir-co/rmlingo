@@ -1032,7 +1032,7 @@ export default function OperationsAtlas() {
               letterSpacing: '0.12em',
             }}
           >
-            info@diplomatic-intl.com
+            info@rmlingo.com
           </span>
         </div>
       </footer>

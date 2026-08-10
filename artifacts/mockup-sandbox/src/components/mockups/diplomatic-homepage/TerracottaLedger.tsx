@@ -798,7 +798,7 @@ export default function TerracottaLedger() {
               className="tl-underline text-[10.5px] tracking-[0.06em]"
               style={{ fontFamily: MONO, color: INK }}
             >
-              info@diplomatic-intl.com
+              info@rmlingo.com
             </a>
           </div>
         </div>

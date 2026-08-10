@@ -746,7 +746,7 @@ export default function EditorialRefined() {
               className="di-underline text-[11px] tracking-wide"
               style={{ fontFamily: SANS, color: NAVY }}
             >
-              info@diplomatic-intl.com
+              info@rmlingo.com
             </a>
           </div>
         </div>
