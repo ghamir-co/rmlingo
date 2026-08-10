@@ -1011,7 +1011,7 @@ export default function OperationsAtlas() {
               letterSpacing: '0.12em',
             }}
           >
-            © {new Date().getFullYear()} DIPLOMATIC INTERNATIONAL, INC.
+            © {new Date().getFullYear()} RMLingo
           </span>
           <span
             style={{
