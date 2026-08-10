@@ -4,7 +4,7 @@ import { join, relative } from 'node:path'
 
 const ROOT = '/home/seven/rmlingo'
 const EXCLUDE_DIRS = new Set(['node_modules', '.git', 'dist'])
-const EXCLUDE_FILES = new Set(['RMLINGO_DIRECTIVE.md', 'pnpm-lock.yaml'])
+const EXCLUDE_FILES = new Set(['RMLINGO_DIRECTIVE.md', 'pnpm-lock.yaml', 'rebrand.mjs'])
 
 const REPLACEMENTS = [
   ['Diplomatic International', 'RMLingo'],
