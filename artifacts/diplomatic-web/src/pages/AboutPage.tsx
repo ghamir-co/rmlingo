@@ -30,6 +30,10 @@ export default function AboutPage() {
       {/* Hero quote */}
       <section className="relative min-h-[60dvh] w-full overflow-hidden px-6 md:px-12">
         <ScriptBackground />
+        <div
+          className="geometric-pattern pointer-events-none absolute inset-0 z-0 opacity-60"
+          aria-hidden="true"
+        />
         <div className="relative z-10 mx-auto flex min-h-[60dvh] max-w-[1000px] flex-col items-center justify-center py-24 text-center">
           <Reveal>
             <div className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
@@ -80,7 +84,7 @@ export default function AboutPage() {
             <figure>
               <img
                 src={`${import.meta.env.BASE_URL}media/field/language-services-overview.png`}
-                alt="A delegate holds Arabic-language conference papers beside a wireless interpretation receiver and earpiece during an on-site session."
+                alt="A delegate at a regional summit in the Middle East holds Arabic-language conference papers beside a wireless interpretation receiver and earpiece."
                 width={1024}
                 height={669}
                 loading="lazy"

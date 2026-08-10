@@ -6,7 +6,7 @@ export default function Footer() {
 
       <div className="mx-auto grid max-w-[1400px] grid-cols-1 gap-8 px-6 py-10 md:grid-cols-3 md:px-12">
         {/* Left — copyright */}
-        <div className="text-[12px] text-muted-foreground md:text-left">
+        <div className="text-[12px] text-muted-foreground md:text-start">
           © {new Date().getFullYear()} RMLingo
           <br />
           <span className="mt-1 inline-block text-[11px]">Founded 2003</span>
@@ -23,7 +23,7 @@ export default function Footer() {
         </div>
 
         {/* Right — offices / contact */}
-        <div className="text-[12px] text-muted-foreground md:text-right">
+        <div className="text-[12px] text-muted-foreground md:text-end">
           +1 619-752-5604 &nbsp;|&nbsp; info@rmlingo.com
         </div>
       </div>

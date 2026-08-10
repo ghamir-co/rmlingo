@@ -73,57 +73,58 @@
 
   --opaque-button-border-intensity: -8;
 
-  --elevate-1: rgba(27, 42, 74, 0.03);
-  --elevate-2: rgba(27, 42, 74, 0.07);
+  --elevate-1: rgba(28, 61, 49, 0.03);
+  --elevate-2: rgba(28, 61, 49, 0.07);
 
-  /* RMLingo palette — warm ivory, deep navy, gold accent */
-  --background: 38 33% 92%; /* #F5F0E8 ivory */
-  --foreground: 220 45% 19%; /* #1B2A4A navy  */
+  /* RMLingo palette — desert sand, deep emerald, rich gold (MENA) */
+  --background: 42 40% 96%; /* #F7F3EA warm desert sand */
+  --foreground: 165 32% 16%; /* #1C3D31 deep emerald ink */
 
-  --border: 35 20% 82%;
-  --card: 38 33% 94%;
-  --card-foreground: 220 45% 19%;
-  --card-border: 35 20% 82%;
+  --border: 40 22% 82%;
+  --card: 42 42% 97%;
+  --card-foreground: 165 32% 16%;
+  --card-border: 40 22% 82%;
 
-  --sidebar: 220 45% 19%;
-  --sidebar-foreground: 38 33% 92%;
-  --sidebar-border: 220 30% 30%;
-  --sidebar-primary: 36 56% 50%;
-  --sidebar-primary-foreground: 38 33% 92%;
-  --sidebar-accent: 36 56% 50%;
-  --sidebar-accent-foreground: 38 33% 92%;
-  --sidebar-ring: 36 56% 50%;
+  --sidebar: 165 36% 18%;
+  --sidebar-foreground: 42 40% 96%;
+  --sidebar-border: 165 28% 30%;
+  --sidebar-primary: 38 74% 44%;
+  --sidebar-primary-foreground: 42 40% 96%;
+  --sidebar-accent: 38 74% 44%;
+  --sidebar-accent-foreground: 42 40% 96%;
+  --sidebar-ring: 38 74% 44%;
 
-  --popover: 38 33% 94%;
-  --popover-foreground: 220 45% 19%;
-  --popover-border: 35 20% 82%;
+  --popover: 42 42% 97%;
+  --popover-foreground: 165 32% 16%;
+  --popover-border: 40 22% 82%;
 
-  --primary: 220 45% 19%; /* navy */
-  --primary-foreground: 38 33% 92%; /* ivory */
+  --primary: 165 36% 20%; /* deep emerald #23513F */
+  --primary-foreground: 42 40% 96%; /* sand */
 
-  --secondary: 35 15% 85%;
-  --secondary-foreground: 220 45% 19%;
+  --secondary: 40 28% 88%;
+  --secondary-foreground: 165 32% 16%;
 
-  --muted: 35 15% 85%;
-  --muted-foreground: 30 10% 39%; /* #5C564C warm gray (AA contrast on ivory) */
+  --muted: 40 28% 88%;
+  --muted-foreground: 40 14% 36%; /* warm taupe (AA on sand) */
 
-  --accent: 36 56% 50%; /* #C9973A gold */
-  --accent-foreground: 38 33% 92%;
+  --accent: 38 74% 44%; /* rich gold #C68A1E */
+  --accent-foreground: 42 40% 96%;
 
-  --destructive: 0 60% 42%;
-  --destructive-foreground: 38 33% 92%;
+  --destructive: 0 58% 44%;
+  --destructive-foreground: 42 40% 96%;
 
-  --input: 220 45% 19%; /* navy borders on inputs */
-  --ring: 36 56% 50%; /* gold ring */
+  --input: 165 36% 20%; /* emerald borders on inputs */
+  --ring: 38 74% 44%; /* gold ring */
 
-  --chart-1: 220 45% 19%;
-  --chart-2: 36 56% 50%;
-  --chart-3: 30 10% 42%;
-  --chart-4: 220 30% 35%;
-  --chart-5: 35 20% 70%;
+  --chart-1: 165 36% 24%;
+  --chart-2: 38 74% 44%;
+  --chart-3: 40 24% 55%;
+  --chart-4: 165 30% 40%;
+  --chart-5: 42 40% 70%;
 
-  --app-font-sans: 'Inter', sans-serif;
-  --app-font-serif: 'Playfair Display', Georgia, serif;
+  --app-font-sans: 'Inter', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+  --app-font-serif: 'Playfair Display', 'IBM Plex Sans Arabic', Georgia,
+    serif;
   --app-font-mono: Menlo, monospace;
   --radius: 0rem; /* sharp corners — editorial, not SaaS */
 
@@ -181,61 +182,61 @@
   );
 }
 
-/* Dark mode — kept consistent with brand (deep navy ground, ivory text).
+/* Dark mode — kept consistent with brand (deep emerald ground, sand text).
    Not used by default but defined so no `red` placeholders remain. */
 .dark {
-  --button-outline: rgba(245, 240, 232, 0.12);
-  --badge-outline: rgba(245, 240, 232, 0.06);
+  --button-outline: rgba(247, 243, 234, 0.12);
+  --badge-outline: rgba(247, 243, 234, 0.06);
 
   --opaque-button-border-intensity: 9;
 
-  --elevate-1: rgba(245, 240, 232, 0.04);
-  --elevate-2: rgba(245, 240, 232, 0.09);
+  --elevate-1: rgba(247, 243, 234, 0.04);
+  --elevate-2: rgba(247, 243, 234, 0.09);
 
-  --background: 220 45% 13%;
-  --foreground: 38 33% 92%;
+  --background: 165 40% 9%;
+  --foreground: 42 40% 94%;
 
-  --border: 220 25% 28%;
-  --card: 220 45% 16%;
-  --card-foreground: 38 33% 92%;
-  --card-border: 220 25% 28%;
+  --border: 165 25% 22%;
+  --card: 165 36% 12%;
+  --card-foreground: 42 40% 94%;
+  --card-border: 165 25% 22%;
 
-  --sidebar: 220 45% 11%;
-  --sidebar-foreground: 38 33% 92%;
-  --sidebar-border: 220 25% 24%;
-  --sidebar-primary: 36 56% 50%;
-  --sidebar-primary-foreground: 38 33% 92%;
-  --sidebar-accent: 36 56% 50%;
-  --sidebar-accent-foreground: 38 33% 92%;
-  --sidebar-ring: 36 56% 50%;
+  --sidebar: 165 42% 7%;
+  --sidebar-foreground: 42 40% 94%;
+  --sidebar-border: 165 25% 18%;
+  --sidebar-primary: 38 74% 50%;
+  --sidebar-primary-foreground: 165 40% 9%;
+  --sidebar-accent: 38 74% 50%;
+  --sidebar-accent-foreground: 165 40% 9%;
+  --sidebar-ring: 38 74% 50%;
 
-  --popover: 220 45% 16%;
-  --popover-foreground: 38 33% 92%;
-  --popover-border: 220 25% 28%;
+  --popover: 165 36% 12%;
+  --popover-foreground: 42 40% 94%;
+  --popover-border: 165 25% 22%;
 
-  --primary: 38 33% 92%;
-  --primary-foreground: 220 45% 19%;
+  --primary: 42 40% 94%;
+  --primary-foreground: 165 36% 14%;
 
-  --secondary: 220 25% 24%;
-  --secondary-foreground: 38 33% 92%;
+  --secondary: 165 25% 18%;
+  --secondary-foreground: 42 40% 94%;
 
-  --muted: 220 25% 24%;
-  --muted-foreground: 35 12% 68%;
+  --muted: 165 25% 18%;
+  --muted-foreground: 40 15% 72%;
 
-  --accent: 36 56% 55%;
-  --accent-foreground: 220 45% 13%;
+  --accent: 38 74% 52%;
+  --accent-foreground: 165 40% 9%;
 
-  --destructive: 0 55% 50%;
-  --destructive-foreground: 38 33% 92%;
+  --destructive: 0 55% 52%;
+  --destructive-foreground: 42 40% 94%;
 
-  --input: 220 25% 40%;
-  --ring: 36 56% 55%;
+  --input: 165 25% 34%;
+  --ring: 38 74% 52%;
 
-  --chart-1: 36 56% 55%;
-  --chart-2: 38 33% 92%;
-  --chart-3: 35 12% 68%;
-  --chart-4: 220 30% 60%;
-  --chart-5: 220 25% 40%;
+  --chart-1: 38 74% 52%;
+  --chart-2: 42 40% 94%;
+  --chart-3: 40 15% 72%;
+  --chart-4: 165 30% 55%;
+  --chart-5: 165 25% 34%;
 
   --shadow-2xs: none;
   --shadow-xs: none;
@@ -346,4 +347,85 @@
   .di-underline:hover::after {
     width: 100%;
   }
+
+  /* MENA geometric lattice — subtle islamic-geometric diamond overlay */
+  .geometric-pattern {
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        hsl(var(--accent) / 0.055) 0 1px,
+        transparent 1px 18px
+      ),
+      repeating-linear-gradient(
+        -45deg,
+        hsl(var(--accent) / 0.055) 0 1px,
+        transparent 1px 18px
+      );
+  }
+
+  /* Eight-pointed star accent mark */
+  .star-eight {
+    position: relative;
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  .star-eight::before,
+  .star-eight::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: hsl(var(--accent));
+    transform: rotate(45deg);
+  }
+  .star-eight::before {
+    transform: rotate(0deg);
+  }
+  .star-eight::after {
+    transform: rotate(45deg);
+  }
+}
+
+/* ============================================================================
+   RTL support (dir="rtl")
+   The site is authored with Tailwind logical properties (ms/me/ps/pe/start/end/
+   text-start/text-end) so the layout flips automatically when <html dir="rtl">.
+   This layer handles the remaining physical leftovers and script-specific
+   typography so an Arabic translation can be dropped in without layout work.
+   ========================================================================== */
+[dir='rtl'] body {
+  direction: rtl;
+}
+
+[dir='rtl'] .di-underline::after {
+  left: auto;
+  right: 0;
+}
+
+/* Flip the decorative script palimpsest so it mirrors gracefully in RTL */
+[dir='rtl'] .script-palimpsest {
+  transform: scaleX(-1);
+}
+
+/* Arabic-first font rendering inside RTL documents */
+[dir='rtl'] body,
+[dir='rtl'] .font-sans {
+  font-family: 'IBM Plex Sans Arabic', 'Inter', system-ui, sans-serif;
+}
+[dir='rtl'] .font-serif {
+  font-family: 'Playfair Display', 'IBM Plex Sans Arabic', Georgia, serif;
+}
+[dir='rtl'] .font-arabic {
+  font-family: 'Amiri', 'IBM Plex Sans Arabic', serif;
+}
+
+/* Physical-left/right leftovers in the shared UI kit, flipped for RTL */
+[dir='rtl'] .fixed.left-\[50\%\] {
+  left: auto;
+  right: 50%;
+}
+[dir='rtl'] .fixed.left-\[50\%\],
+[dir='rtl'] [class*='left-[50%]'] {
+  left: auto;
+  right: 50%;
 }

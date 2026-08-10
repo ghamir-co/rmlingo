@@ -85,7 +85,7 @@ export default function ArticlePage() {
 
           {/* Inline CTA */}
           <Reveal>
-            <div className="mt-20 border-l border-accent pl-8">
+            <div className="mt-20 border-s border-accent ps-8">
               <p className="font-serif text-[20px] italic leading-relaxed text-foreground md:text-[24px]">
                 Planning an engagement that crosses languages?
               </p>

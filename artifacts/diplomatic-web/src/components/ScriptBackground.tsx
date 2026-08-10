@@ -123,12 +123,55 @@ const WORDS: ScriptWord[] = [
     rotate: 5,
     opacity: 0.07,
   },
+  {
+    text: 'الثقافة',
+    top: '12%',
+    left: '78%',
+    size: 150,
+    rotate: -3,
+    opacity: 0.05,
+    arabic: true,
+  },
+  {
+    text: 'Culture',
+    top: '60%',
+    left: '30%',
+    size: 120,
+    rotate: 2,
+    opacity: 0.06,
+  },
+  {
+    text: 'التعاون',
+    top: '30%',
+    left: '88%',
+    size: 140,
+    rotate: 4,
+    opacity: 0.05,
+    arabic: true,
+  },
+  {
+    text: 'الشرق الأوسط',
+    top: '82%',
+    left: '52%',
+    size: 130,
+    rotate: -5,
+    opacity: 0.05,
+    arabic: true,
+  },
+  {
+    text: 'Middle East',
+    top: '18%',
+    left: '32%',
+    size: 110,
+    rotate: 3,
+    opacity: 0.06,
+  },
 ]
 
 export default function ScriptBackground() {
   return (
     <div
-      className="absolute inset-0 overflow-hidden pointer-events-none z-0 select-none"
+      className="script-palimpsest absolute inset-0 overflow-hidden pointer-events-none z-0 select-none"
       aria-hidden="true"
     >
       {WORDS.map((w, i) => (

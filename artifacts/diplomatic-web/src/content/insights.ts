@@ -36,7 +36,7 @@ export const ARTICLES: Article[] = [
       'How live interpretation removes friction from negotiations, conferences, and customer support — and why accuracy and cultural context matter as much as speed.',
     image: 'media/insights/real-time-interpretation.jpg',
     imageAlt:
-      'Colleagues from different countries seated around a conference table during a multilingual business meeting.',
+      'Delegates from across the Middle East and North Africa seated around a conference table at a multilingual summit in Dubai, using interpretation headsets.',
     sections: [
       {
         heading: 'Breaking Language Barriers in Global Communication',
@@ -75,7 +75,7 @@ export const ARTICLES: Article[] = [
       'A practical framework for evaluating quality, technology, turnaround, and support when adapting multimedia for international audiences.',
     image: 'media/insights/subtitling-and-dubbing.jpg',
     imageAlt:
-      'Audio editing workstation with waveform software used for subtitling, dubbing, and voiceover production.',
+      'Audio editing workstation with waveform software preparing Arabic subtitling, dubbing, and voiceover for regional broadcast.',
     sections: [
       {
         heading: 'Understanding Your Project Requirements',
@@ -113,7 +113,7 @@ export const ARTICLES: Article[] = [
       'Why accurate translation protects meaning, tone, and intent \u2014 and where localization and interpretation carry the message the rest of the way.',
     image: 'media/insights/professional-translation.jpg',
     imageAlt:
-      'Open reference books and documents on a desk, representing professional translation work.',
+      'Reference books, legal documents, and translation glossaries on a desk, reflecting professional Arabic and English translation work.',
     sections: [
       {
         heading: 'The Importance of Accurate Translation',

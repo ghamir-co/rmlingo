@@ -116,7 +116,7 @@ export default function ContactPage() {
           <Reveal>
             {prepared ? (
               <div
-                className="border-l border-accent pl-8"
+                className="border-s border-accent ps-8"
                 data-testid="status-inquiry-prepared"
               >
                 <h2 className="font-serif text-[28px] italic text-foreground md:text-[34px]">

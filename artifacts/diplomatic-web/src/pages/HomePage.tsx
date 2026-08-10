@@ -63,6 +63,10 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative min-h-[100dvh] w-full overflow-hidden px-6 md:px-12">
         <ScriptBackground />
+        <div
+          className="geometric-pattern pointer-events-none absolute inset-0 z-0 opacity-70"
+          aria-hidden="true"
+        />
 
         <div className="relative z-10 mx-auto flex min-h-[100dvh] max-w-[1400px] flex-col justify-center py-24">
           {/* Headline — staggered line entrance */}
@@ -80,7 +84,7 @@ export default function HomePage() {
               The Language
             </motion.span>
             <motion.span
-              className="block text-[58px] leading-[1.02] italic sm:text-[72px] md:ml-12 md:text-[96px]"
+              className="block text-[58px] leading-[1.02] italic sm:text-[72px] md:ms-12 md:text-[96px]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -92,7 +96,7 @@ export default function HomePage() {
               of Diplomacy,
             </motion.span>
             <motion.span
-              className="mt-2 block text-[44px] leading-[1.05] font-light sm:text-[54px] md:ml-24 md:text-[72px]"
+              className="mt-2 block text-[44px] leading-[1.05] font-light sm:text-[54px] md:ms-24 md:text-[72px]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -150,7 +154,7 @@ export default function HomePage() {
         </div>
 
         {/* Vertical rotated office strip */}
-        <div className="absolute right-5 top-1/2 z-10 hidden -translate-y-1/2 lg:block">
+        <div className="absolute end-5 top-1/2 z-10 hidden -translate-y-1/2 lg:block">
           <span
             className="block text-[10px] uppercase text-muted-foreground"
             style={{
@@ -183,7 +187,7 @@ export default function HomePage() {
               <Reveal key={s.num} delay={i * 0.08} x={-30}>
                 <div className="relative border-b border-border py-12">
                   <span
-                    className="pointer-events-none absolute -top-4 left-0 font-serif text-[120px] leading-none text-foreground/[0.07] md:text-[180px]"
+                    className="pointer-events-none absolute -top-4 start-0 font-serif text-[120px] leading-none text-foreground/[0.07] md:text-[180px]"
                     aria-hidden="true"
                   >
                     {s.num}

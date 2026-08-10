@@ -1,6 +1,6 @@
 # RMLingo
 
-A prestigious marketing website for a US-based language interpretation and translation firm (est. 2003) serving diplomatic missions, UN agencies, and global corporate entities.
+A prestigious marketing website for **RMLingo** (rmlingo.com), a Middle East language interpretation and translation company (est. 2003) serving diplomatic missions, regional institutions, UN agencies, and global organizations.
 
 ## Run & Operate
 
@@ -23,7 +23,7 @@ A prestigious marketing website for a US-based language interpretation and trans
 ## Where things live
 
 - `artifacts/diplomatic-web/` — main marketing website (React + Vite, presentation-first, no backend)
-- `artifacts/diplomatic-web/src/index.css` — palette tokens (navy/ivory/gold) and font variables
+- `artifacts/diplomatic-web/src/index.css` — palette tokens (desert sand / deep emerald / rich gold), RTL support layer, and font variables
 - `artifacts/diplomatic-web/src/components/ScriptBackground.tsx` — signature Arabic/English palimpsest background
 - `artifacts/diplomatic-web/src/pages/` — HomePage, ServicesPage, AboutPage, ContactPage
 - `artifacts/mockup-sandbox/src/components/mockups/diplomatic-homepage/` — earlier canvas mockup

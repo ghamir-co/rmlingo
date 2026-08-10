@@ -1,8 +1,8 @@
 # RMLingo
 
-A prestigious marketing website for a US-based language interpretation and
-translation firm (est. 2003) serving diplomatic missions, UN agencies, and
-global corporate entities.
+A prestigious marketing website for **RMLingo** (rmlingo.com), a Middle East
+language interpretation and translation company (est. 2003) serving diplomatic
+missions, regional institutions, UN agencies, and global organizations.
 
 > **Note:** This is the legacy/Replit-authored readme (`replit.md`) moved into a
 > proper `README.md`. See `MIGRATION_GUIDE.md` for the 2026 modernization
@@ -75,7 +75,16 @@ Run these from the repo root (`pnpm -w` is implicit for root scripts).
 - **`ScriptBackground`** renders Arabic (Amiri) + English at 4–9% opacity —
   pure CSS, no images.
 - **framer-motion** handles entrance animations (staggered hero, scroll-triggered).
-- **Palette** is set via CSS HSL variables in `index.css` (navy / ivory / gold).
+- **Palette** is set via CSS HSL variables in `index.css` (desert sand / deep
+  emerald / rich gold).
+- **MENA visual language:** deep emerald primary, warm desert-sand ground, and
+  rich gold accent; subtle islamic-geometric lattice (`.geometric-pattern`) and
+  an eight-pointed star mark (`.star-eight`) in the hero sections.
+- **RTL-ready:** layout uses Tailwind logical properties (`ms/me/ps/pe/start/end`,
+  `text-start/end`) so `dir="rtl"` mirrors the site automatically. The nav
+  language toggle persists `rmlingo-lang` in `localStorage`; an Arabic build can
+  be dropped in with no layout work. Arabic-first fonts (`IBM Plex Sans Arabic`,
+  `Amiri`) are loaded via Google Fonts.
 - **Route-level code splitting:** secondary pages are lazy-loaded
   (`React.lazy` + `Suspense`) to keep the initial bundle small.
 - **Webfonts load asynchronously** (`font-display: optional`) to avoid
