@@ -40,6 +40,12 @@ and trust-claim reference in `src/` for the RMLingo site
 3. **Contact details** (`+1 619-752-5604`, `info@rmlingo.com`) come from the
    business's live site; per prior project memory they still need explicit owner
    confirmation.
+4. **Borderline copy on About.** `aboutPage.story` (EN/AR) includes the sentence
+   "whether delivering remote simultaneous interpretation for a UN session or
+   translating a pivotal treaty" — a hypothetical example ("whether… or…"), not a
+   claim of an active UN relationship. Kept as owner-authored marketing copy, but
+   flagged: if the owner wants zero institutional name-drops, reword to remove
+   "UN session".
 
 ## Needed from the business owner (no fabrication to fill gaps)
 
