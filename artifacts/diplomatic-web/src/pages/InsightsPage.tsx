@@ -4,13 +4,6 @@ import Reveal from '@/components/Reveal'
 import { ARTICLES, asset } from '@/content/insights'
 import { useI18n, type ArticleCopy } from '@/i18n'
 
-const EXPERIENCE_LOGOS = [
-  'media/credibility/undp.png',
-  'media/credibility/world-bank.png',
-  'media/credibility/red-cross.png',
-  'media/credibility/tetra-tech-usaid.png',
-]
-
 export default function InsightsPage() {
   const { lang, dict } = useI18n()
   const t = dict.insightsPage
@@ -38,50 +31,6 @@ export default function InsightsPage() {
           <p className="mt-8 max-w-[620px] font-serif text-[18px] leading-relaxed text-hero-foreground/75 md:text-[20px]">
             {t.subtitle}
           </p>
-        </div>
-      </section>
-
-      {/* Experience — elevated cards */}
-      <section className="relative px-6 py-24 md:px-12">
-        <div className="mx-auto max-w-[1400px]">
-          <Reveal>
-            <div className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
-              {t.experienceLabel}
-            </div>
-            <div className="mt-3 h-px w-[80px] bg-accent" />
-            <h2 className={`mt-8 text-[30px] leading-tight text-foreground md:text-[42px] ${headingFontItalic}`}>
-              {t.experienceTitle}
-            </h2>
-          </Reveal>
-
-          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-10">
-            {t.experience.map((item, i) => (
-              <Reveal key={item.title} delay={i * 0.1}>
-                <div className="service-card h-full p-8 md:p-10">
-                  <img
-                    src={asset(EXPERIENCE_LOGOS[i])}
-                    alt={item.logoAlt}
-                    loading="lazy"
-                    className="h-10 w-auto max-w-[180px] object-contain object-left opacity-80 md:h-12 rtl:object-right"
-                  />
-                  <h3 className={`mt-6 text-[22px] leading-tight text-foreground md:text-[26px] ${headingFontItalic}`}>
-                    {item.title}
-                  </h3>
-                  <p className="mt-5 text-[16px] leading-relaxed text-muted-foreground md:text-[17px]">
-                    {item.summary}
-                  </p>
-                  <div className="mt-8 border-t border-border pt-6">
-                    <div className="font-sans text-[14px] font-medium tracking-wide text-foreground">
-                      {item.source}
-                    </div>
-                    <div className="mt-1 text-[13px] uppercase tracking-[0.1em] text-muted-foreground">
-                      {item.role}
-                    </div>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -117,7 +66,9 @@ export default function InsightsPage() {
                       <span className="text-[10px] uppercase tracking-[0.2em] text-accent">
                         {copy.category}
                       </span>
-                      <h3 className={`mt-5 text-[21px] leading-tight text-foreground md:text-[24px] ${headingFontItalic}`}>
+                      <h3
+                        className={`mt-5 text-[21px] leading-tight text-foreground md:text-[24px] ${headingFontItalic}`}
+                      >
                         {copy.title}
                       </h3>
                       <p className="mt-3 text-[14px] leading-relaxed text-muted-foreground">

@@ -17,11 +17,7 @@
     "ctaServices": "Explore Our Services →",
     "ctaContact": "Request Consultation →",
     "vertical": "Serving Global Institutions Worldwide",
-    "facts": [
-      "Since 2003",
-      "Arabic ↔ English Core",
-      "Global Delivery"
-    ],
+    "facts": ["Since 2003", "Arabic ↔ English Core", "Global Delivery"],
     "whatWeDo": "What We Do",
     "services": [
       {
@@ -39,25 +35,6 @@
       {
         "name": "Consultation & Localization",
         "desc": "Strategic language advisory, cultural relocation support, and seamless adaptation for international audiences."
-      }
-    ],
-    "trustedTitle": "Trusted by Leading Institutions",
-    "trusted": [
-      {
-        "name": "United Nations Development Programme",
-        "alt": "United Nations Development Programme logo"
-      },
-      {
-        "name": "The World Bank",
-        "alt": "The World Bank logo"
-      },
-      {
-        "name": "Red Cross",
-        "alt": "Red Cross logo"
-      },
-      {
-        "name": "USAID / Tetra Tech",
-        "alt": "Tetra Tech and USAID logos"
       }
     ]
   },
@@ -100,10 +77,7 @@
     "families": [
       {
         "family": "Primary Focus",
-        "languages": [
-          "Arabic",
-          "English"
-        ]
+        "languages": ["Arabic", "English"]
       },
       {
         "family": "Global Multilingual",
@@ -138,7 +112,7 @@
     "narrative1": "RMLingo was established in 2003 by Dr. Rawan Manna to provide interpretation and translation worthy of the word “diplomatic.” Recognizing that global institutions rely on nuance and precision, she built a practice dedicated to absolute fidelity.",
     "narrative2": "Rooted in deep expertise with the Arabic-English pairing, the firm rapidly expanded into a multilingual global language service. Today, whether delivering remote simultaneous interpretation for a UN session or translating a pivotal treaty, RMLingo serves the organizations that shape the world.",
     "figureCaption": "On-site interpretation in practice: receivers, briefing documents, and prepared terminology at a working session.",
-    "figureAlt": "A delegate at a regional summit in the Middle East holds Arabic-language conference papers beside a wireless interpretation receiver and earpiece.",
+    "figureAlt": "Stylised illustration of on-site interpretation: interpretation receivers, briefing documents, and prepared terminology at a working session.",
     "valuesLabel": "What We Hold",
     "values": [
       {
@@ -215,38 +189,6 @@
     "label": "Insights & Experience",
     "title": "Perspective born of practice. Trust earned through precision.",
     "subtitle": "Explore the work that shapes our standards and our reflections on the evolving landscape of global language services.",
-    "experienceLabel": "Experience",
-    "experienceTitle": "Built for the work that crosses borders.",
-    "experience": [
-      {
-        "title": "United Nations Development Programme",
-        "summary": "A credibility anchor for the multilingual meetings, field-facing communication, and technical coordination international development work demands.",
-        "source": "United Nations Development Programme (UNDP)",
-        "role": "International development",
-        "logoAlt": "United Nations Development Programme logo"
-      },
-      {
-        "title": "The World Bank",
-        "summary": "A reference point for exact, context-aware language work across global financial and institutional conversations.",
-        "source": "The World Bank",
-        "role": "Global finance",
-        "logoAlt": "The World Bank logo"
-      },
-      {
-        "title": "Red Cross",
-        "summary": "A standard for language support where clarity, cultural sensitivity, and responsiveness matter in humanitarian settings.",
-        "source": "Red Cross",
-        "role": "Humanitarian response",
-        "logoAlt": "Red Cross logo"
-      },
-      {
-        "title": "USAID & Tetra Tech",
-        "summary": "Experience that reflects the needs of multilingual programme delivery, practical localization, and diverse regional audiences.",
-        "source": "USAID / Tetra Tech",
-        "role": "International programmes",
-        "logoAlt": "Tetra Tech and USAID logos"
-      }
-    ],
     "publishedLabel": "Published Insights",
     "readMore": "Read Article →"
   },

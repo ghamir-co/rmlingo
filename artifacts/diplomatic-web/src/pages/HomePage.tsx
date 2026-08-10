@@ -4,13 +4,6 @@ import { motion } from 'framer-motion'
 import { Link } from 'wouter'
 import { useI18n } from '@/i18n'
 
-const TRUSTED_LOGOS = [
-  'media/credibility/undp.png',
-  'media/credibility/world-bank.png',
-  'media/credibility/red-cross.png',
-  'media/credibility/tetra-tech-usaid.png',
-]
-
 export default function HomePage() {
   const { lang, dict } = useI18n()
   const t = dict.home
@@ -44,14 +37,16 @@ export default function HomePage() {
                 {t.eyebrow}
               </motion.div>
 
-              <h1
-                className={`mt-8 text-hero-foreground ${headingFont}`}
-              >
+              <h1 className={`mt-8 text-hero-foreground ${headingFont}`}>
                 <motion.span
                   className="block text-[52px] leading-[1.06] sm:text-[68px] md:text-[88px]"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 0.1,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
                 >
                   {t.heroLine1}
                 </motion.span>
@@ -59,7 +54,11 @@ export default function HomePage() {
                   className={`block text-[52px] leading-[1.06] sm:text-[68px] md:ms-12 md:text-[88px] ${headingFontItalic}`}
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 0.25,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
                 >
                   {t.heroLine2}
                 </motion.span>
@@ -67,7 +66,11 @@ export default function HomePage() {
                   className="mt-2 block text-[40px] leading-[1.08] font-light sm:text-[50px] md:ms-24 md:text-[68px]"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{
+                    duration: 0.7,
+                    delay: 0.4,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
                 >
                   {t.heroLine3}
                 </motion.span>
@@ -189,7 +192,10 @@ export default function HomePage() {
                     >
                       {String(i + 1).padStart(2, '0')}
                     </span>
-                    <span className="star-eight mt-2 shrink-0" aria-hidden="true" />
+                    <span
+                      className="star-eight mt-2 shrink-0"
+                      aria-hidden="true"
+                    />
                   </div>
                   <h3
                     className={`mt-8 text-[24px] leading-tight text-foreground md:text-[28px] ${headingFontItalic}`}
@@ -201,41 +207,6 @@ export default function HomePage() {
                   </p>
                 </div>
               </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* TRUSTED BY */}
-      <section className="relative overflow-hidden px-6 py-28 md:px-12">
-        <div className="mx-auto max-w-[1400px]">
-          <Reveal>
-            <h2 className="font-serif text-[32px] italic text-foreground md:text-[40px]">
-              {t.trustedTitle}
-            </h2>
-            <div className="mt-4 h-px w-[60px] bg-accent" />
-          </Reveal>
-
-          <div className="mt-16 grid grid-cols-2 gap-x-10 gap-y-14 md:grid-cols-4 md:gap-x-16">
-            {t.trusted.map((trusted, i) => (
-              <motion.div
-                key={trusted.name}
-                className="flex flex-col items-start gap-5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-8% 0px' }}
-                transition={{ duration: 0.55, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
-              >
-                <img
-                  src={`${import.meta.env.BASE_URL}${TRUSTED_LOGOS[i]}`}
-                  alt={trusted.alt}
-                  loading="lazy"
-                  className="h-12 w-auto max-w-full object-contain object-left opacity-75 transition-opacity hover:opacity-100 md:h-14 rtl:object-right"
-                />
-                <span className="text-[12px] uppercase leading-snug tracking-[0.12em] text-muted-foreground">
-                  {trusted.name}
-                </span>
-              </motion.div>
             ))}
           </div>
         </div>

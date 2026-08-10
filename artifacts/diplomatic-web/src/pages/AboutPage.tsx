@@ -1,5 +1,6 @@
 import ScriptBackground from '@/components/ScriptBackground'
 import Reveal from '@/components/Reveal'
+import FieldworkIllustration from '@/components/FieldworkIllustration'
 import { useI18n } from '@/i18n'
 
 export default function AboutPage() {
@@ -58,14 +59,9 @@ export default function AboutPage() {
         <div className="mx-auto mt-16 max-w-[1100px]">
           <Reveal delay={0.2}>
             <figure>
-              <img
-                src={`${import.meta.env.BASE_URL}media/field/language-services-overview.png`}
-                alt={t.figureAlt}
-                width={1024}
-                height={669}
-                loading="lazy"
-                className="w-full object-cover"
-              />
+              <div className="overflow-hidden rounded-t-[1rem] border border-border bg-card">
+                <FieldworkIllustration />
+              </div>
               <figcaption className="mt-4 text-[13px] leading-relaxed text-muted-foreground">
                 {t.figureCaption}
               </figcaption>
@@ -117,7 +113,9 @@ export default function AboutPage() {
           <div className="mt-16">
             <Reveal>
               <div className="grid grid-cols-1 gap-3 border-b border-border py-10 md:grid-cols-[1fr_1fr_2fr] md:gap-12">
-                <h3 className={`font-serif text-[22px] text-foreground md:text-[26px] ${headingFont}`}>
+                <h3
+                  className={`font-serif text-[22px] text-foreground md:text-[26px] ${headingFont}`}
+                >
                   {t.leader.name}
                 </h3>
                 <span className="text-[12px] uppercase tracking-[0.15em] text-accent md:mt-2">
