@@ -1,0 +1,11 @@
+node_modules
+dist
+**/.generated/**
+*.tsbuildinfo
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+attached_assets
+screenshots
+*.svg
+public/media

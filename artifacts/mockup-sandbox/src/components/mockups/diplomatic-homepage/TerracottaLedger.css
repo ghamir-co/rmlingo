@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Amiri:wght@400;700&family=Spline+Sans+Mono:wght@400;500&display=swap');
+
+/* ─────────────────────────────────────────────────────────────────────────
+   TerracottaLedger — warm earthen variant of RMLingo
+   Palette: clay parchment #ECE1D1 · ink #241A12 · brass #A8651F · taupe #6E5A48
+   Type:    Fraunces (display) · Spline Sans Mono (meta/UI) · Amiri (Arabic)
+   ───────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --tl-clay: #ece1d1;
+  --tl-clay-2: #e2d4c0;
+  --tl-clay-3: #d8c7ae;
+  --tl-ink: #241a12;
+  --tl-ink-60: rgba(36, 26, 18, 0.6);
+  --tl-ink-40: rgba(36, 26, 18, 0.4);
+  --tl-ink-14: rgba(36, 26, 18, 0.14);
+  --tl-ink-07: rgba(36, 26, 18, 0.07);
+  --tl-ink-04: rgba(36, 26, 18, 0.04);
+  --tl-brass: #a8651f;
+  --tl-brass-soft: #b8772c;
+  --tl-taupe: #6e5a48;
+  --tl-display: 'Fraunces', Georgia, serif;
+  --tl-mono: 'Spline Sans Mono', ui-monospace, monospace;
+  --tl-amiri: 'Amiri', serif;
+}
+
+@keyframes tl-rule-grow {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes tl-grain-drift {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-4%, -3%);
+  }
+}
+
+.tl-grain {
+  position: fixed;
+  inset: -10%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.142 0 0 0 0 0.102 0 0 0 0 0.071 0 0 0 0.10 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  background-size: 220px 220px;
+  animation: tl-grain-drift 18s steps(6) infinite;
+}
+
+.tl-underline {
+  position: relative;
+}
+.tl-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  width: 0;
+  background-color: currentColor;
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.tl-underline:hover::after {
+  width: 100%;
+}
+
+/* Optically tune Fraunces for display use */
+.tl-display {
+  font-family: var(--tl-display);
+  font-optical-sizing: auto;
+  font-variation-settings:
+    'opsz' 120,
+    'SOFT' 30;
+}

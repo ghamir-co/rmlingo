@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Space+Grotesk:wght@300;400;500;600&family=Spline+Sans+Mono:wght@300;400;500&display=swap');
+
+/* ── Operations Atlas — custom properties & keyframes ── */
+.atlas-root {
+  --at-ground: #0a1628;
+  --at-panel: #0f1e33;
+  --at-ivory: #ede6d6;
+  --at-muted: #7e8aa0;
+  --at-gold: #c9973a;
+  --at-gold-bright: #e2b659;
+  --at-hair: rgba(237, 230, 214, 0.12);
+  --at-hair-strong: rgba(237, 230, 214, 0.22);
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-ui: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'Spline Sans Mono', ui-monospace, monospace;
+}
+
+/* slow drifting grid behind the atlas */
+@keyframes atlas-grid-drift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-64px, -64px, 0);
+  }
+}
+.atlas-grid {
+  animation: atlas-grid-drift 60s linear infinite;
+}
+
+/* flowing dashes along an arc — reads as live data flow */
+@keyframes atlas-arc-flow {
+  0% {
+    stroke-dashoffset: 240;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+.atlas-arc-flow {
+  stroke-dasharray: 4 12;
+  animation: atlas-arc-flow 4s linear infinite;
+}
+.atlas-arc-flow.slow {
+  animation-duration: 7s;
+}
+.atlas-arc-flow.fast {
+  animation-duration: 2.6s;
+}
+
+/* concentric ping rings on active capitals */
+@keyframes atlas-ping {
+  0% {
+    transform: scale(0.4);
+    opacity: 0.55;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale(3.2);
+    opacity: 0;
+  }
+}
+.atlas-ping {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: atlas-ping 3.4s ease-out infinite;
+}
+.atlas-ping.delay-1 {
+  animation-delay: 1.1s;
+}
+.atlas-ping.delay-2 {
+  animation-delay: 2.2s;
+}
+
+/* gentle breathing dot */
+@keyframes atlas-breathe {
+  0%,
+  100% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.atlas-breathe {
+  animation: atlas-breathe 3.6s ease-in-out infinite;
+}
+
+/* ticker text crossfade */
+@keyframes atlas-ticker-in {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.atlas-ticker-line {
+  animation: atlas-ticker-in 0.5s ease both;
+}
+
+/* live indicator blink */
+@keyframes atlas-live-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+.atlas-live-dot {
+  animation: atlas-live-blink 1.4s ease-in-out infinite;
+}
+
+/* staggered section rise */
+@keyframes atlas-rise {
+  0% {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.atlas-rise {
+  animation: atlas-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* sweep highlight on channel hover */
+.atlas-channel {
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+.atlas-channel:hover {
+  border-color: var(--at-gold);
+  background-color: rgba(201, 151, 58, 0.06);
+  transform: translateY(-2px);
+}
+
+/* focus / reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .atlas-grid,
+  .atlas-arc-flow,
+  .atlas-ping,
+  .atlas-breathe,
+  .atlas-live-dot,
+  .atlas-rise,
+  .atlas-ticker-line {
+    animation: none !important;
+  }
+}
