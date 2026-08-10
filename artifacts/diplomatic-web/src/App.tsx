@@ -7,6 +7,7 @@ import { Route, Switch, Router as WouterRouter, useLocation } from 'wouter'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import HomePage from '@/pages/HomePage'
+import { I18nProvider } from '@/i18n'
 
 // Route-level code splitting: secondary routes are lazy-loaded so the initial
 // bundle only contains what the landing page needs. Improves FCP/LCP/TTI.
@@ -78,14 +79,16 @@ function Shell() {
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
-          <Shell />
-        </WouterRouter>
-        <Toaster />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <I18nProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+            <Shell />
+          </WouterRouter>
+          <Toaster />
+        </TooltipProvider>
+      </QueryClientProvider>
+    </I18nProvider>
   )
 }
 

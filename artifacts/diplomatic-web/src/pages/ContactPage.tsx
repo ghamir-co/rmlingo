@@ -2,32 +2,7 @@ import { useState, type FormEvent } from 'react'
 import ScriptBackground from '@/components/ScriptBackground'
 import Reveal from '@/components/Reveal'
 import { ArrowRight } from 'lucide-react'
-
-const LANGUAGE_PAIRS = [
-  'Arabic ↔ English',
-  'French ↔ English',
-  'Spanish ↔ English',
-  'Mandarin ↔ English',
-  'Russian ↔ English',
-  'German ↔ English',
-  'Portuguese ↔ English',
-  'Farsi ↔ English',
-  'Hebrew ↔ English',
-  'Amharic ↔ English',
-  'Other (specify in message)',
-]
-
-const SERVICE_TYPES = [
-  'Interpretation (Simultaneous/Consecutive)',
-  'Interpretation (Sign-Language)',
-  'Document Translation',
-  'Editing & Proofreading',
-  'Media Accessibility (Transcription/Captioning)',
-  'Media Accessibility (Subtitling/Dubbing)',
-  'Consultation & Training',
-  'Localization & Relocation',
-  'Event Technical Support & Equipment',
-]
+import { useI18n, format } from '@/i18n'
 
 const INQUIRY_EMAIL = 'info@rmlingo.com'
 const INQUIRY_PHONE = '+1 619-752-5604'
@@ -62,6 +37,12 @@ function buildMailto(fields: {
 }
 
 export default function ContactPage() {
+  const { lang, dict } = useI18n()
+  const t = dict.contactPage
+  const isAr = lang === 'ar'
+  const headingFont = isAr ? 'font-sans font-bold' : 'font-serif'
+  const headingFontItalic = isAr ? 'font-sans font-bold' : 'font-serif italic'
+
   const [prepared, setPrepared] = useState<string | null>(null)
   const [fields, setFields] = useState({
     name: '',
@@ -91,20 +72,24 @@ export default function ContactPage() {
 
   return (
     <div className="relative">
-      {/* Header */}
-      <section className="relative min-h-[45dvh] w-full overflow-hidden px-6 md:px-12">
+      {/* Header — deep emerald */}
+      <section className="relative min-h-[45dvh] w-full overflow-hidden">
+        <div className="hero-deep absolute inset-0" aria-hidden="true" />
+        <div
+          className="geometric-pattern pointer-events-none absolute inset-0 z-0 opacity-40"
+          aria-hidden="true"
+        />
         <ScriptBackground />
-        <div className="relative z-10 mx-auto flex min-h-[45dvh] max-w-[1400px] flex-col justify-center py-24">
-          <div className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
-            CONTACT
+        <div className="relative z-10 mx-auto flex min-h-[45dvh] max-w-[1400px] flex-col justify-center px-6 py-24 md:px-12">
+          <div className="text-[11px] uppercase tracking-[0.2em] text-gold-bright">
+            {t.label}
           </div>
-          <div className="mt-3 h-px w-[80px] bg-accent" />
-          <h1 className="mt-8 font-serif text-[44px] leading-[1.05] text-foreground md:text-[64px]">
-            Begin a Conversation
+          <div className="mt-3 h-px w-[80px] bg-gold-bright/80" />
+          <h1 className={`mt-8 font-serif text-[40px] leading-[1.06] text-hero-foreground md:text-[60px] ${headingFont}`}>
+            {t.title}
           </h1>
-          <p className="mt-6 max-w-[560px] font-serif text-[18px] italic text-muted-foreground md:text-[20px]">
-            Write to us by email or telephone. Every engagement begins with a
-            direct conversation.
+          <p className="mt-6 max-w-[560px] font-serif text-[18px] italic text-hero-foreground/75 md:text-[20px]">
+            {t.subtitle}
           </p>
         </div>
       </section>
@@ -119,24 +104,14 @@ export default function ContactPage() {
                 className="border-s border-accent ps-8"
                 data-testid="status-inquiry-prepared"
               >
-                <h2 className="font-serif text-[28px] italic text-foreground md:text-[34px]">
-                  Your email is ready to send.
+                <h2 className={`font-serif text-[28px] text-foreground md:text-[34px] ${headingFontItalic}`}>
+                  {t.preparedTitle}
                 </h2>
                 <p className="mt-4 max-w-[520px] text-[15px] leading-relaxed text-muted-foreground">
-                  We have opened a prefilled message to{' '}
-                  <span className="text-foreground">{INQUIRY_EMAIL}</span> in
-                  your email application. Your inquiry reaches RMLingo once
-                  you send it from there.
+                  {format(t.preparedBody1, { email: INQUIRY_EMAIL })}
                 </p>
                 <p className="mt-4 max-w-[520px] text-[15px] leading-relaxed text-muted-foreground">
-                  If nothing opened, use the direct link below, or telephone{' '}
-                  <a
-                    href={`tel:${INQUIRY_PHONE.replace(/[^+\d]/g, '')}`}
-                    className="text-foreground underline decoration-accent underline-offset-4"
-                  >
-                    {INQUIRY_PHONE}
-                  </a>{' '}
-                  for urgent interpretation needs.
+                  {format(t.preparedBody2, { phone: INQUIRY_PHONE })}
                 </p>
 
                 <a
@@ -144,7 +119,7 @@ export default function ContactPage() {
                   className="di-underline mt-8 inline-block text-[14px] uppercase tracking-[0.18em] text-foreground"
                   data-testid="link-open-email-draft"
                 >
-                  Open the email draft →
+                  {t.openDraft}
                 </a>
                 <br />
                 <button
@@ -152,7 +127,7 @@ export default function ContactPage() {
                   className="di-underline mt-6 text-[14px] uppercase tracking-[0.18em] text-muted-foreground hover:text-foreground"
                   data-testid="button-edit-inquiry"
                 >
-                  ← Edit the details
+                  {t.editDetails}
                 </button>
               </div>
             ) : (
@@ -162,9 +137,7 @@ export default function ContactPage() {
                 noValidate
               >
                 <p className="mb-10 max-w-[560px] text-[14px] leading-relaxed text-muted-foreground">
-                  Complete the details below and we will compose the message in
-                  your email application, ready for you to send to{' '}
-                  {INQUIRY_EMAIL}.
+                  {format(t.formIntro, { email: INQUIRY_EMAIL })}
                 </p>
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                   <div className="flex flex-col gap-2">
@@ -172,7 +145,7 @@ export default function ContactPage() {
                       htmlFor="name"
                       className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground"
                     >
-                      Name
+                      {t.nameLabel}
                     </label>
                     <input
                       id="name"
@@ -181,7 +154,7 @@ export default function ContactPage() {
                       value={fields.name}
                       onChange={update('name')}
                       className="border-b border-primary bg-transparent py-3 text-[16px] text-foreground outline-none transition-colors placeholder:text-muted-foreground/50 focus:border-accent"
-                      placeholder="Full name"
+                      placeholder={t.namePlaceholder}
                       data-testid="input-name"
                     />
                   </div>
@@ -190,7 +163,7 @@ export default function ContactPage() {
                       htmlFor="organization"
                       className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground"
                     >
-                      Organization
+                      {t.orgLabel}
                     </label>
                     <input
                       id="organization"
@@ -198,7 +171,7 @@ export default function ContactPage() {
                       value={fields.organization}
                       onChange={update('organization')}
                       className="border-b border-primary bg-transparent py-3 text-[16px] text-foreground outline-none transition-colors placeholder:text-muted-foreground/50 focus:border-accent"
-                      placeholder="Mission, agency, or institution"
+                      placeholder={t.orgPlaceholder}
                       data-testid="input-organization"
                     />
                   </div>
@@ -209,7 +182,7 @@ export default function ContactPage() {
                     htmlFor="languagePair"
                     className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground"
                   >
-                    Language Pair
+                    {t.pairLabel}
                   </label>
                   <select
                     id="languagePair"
@@ -220,9 +193,9 @@ export default function ContactPage() {
                     onChange={update('languagePair')}
                   >
                     <option value="" disabled>
-                      Select a language pair
+                      {t.pairPlaceholder}
                     </option>
-                    {LANGUAGE_PAIRS.map((p) => (
+                    {t.pairs.map((p) => (
                       <option key={p} value={p}>
                         {p}
                       </option>
@@ -235,7 +208,7 @@ export default function ContactPage() {
                     htmlFor="serviceType"
                     className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground"
                   >
-                    Service Type
+                    {t.serviceLabel}
                   </label>
                   <select
                     id="serviceType"
@@ -246,9 +219,9 @@ export default function ContactPage() {
                     onChange={update('serviceType')}
                   >
                     <option value="" disabled>
-                      Select a service
+                      {t.servicePlaceholder}
                     </option>
-                    {SERVICE_TYPES.map((s) => (
+                    {t.serviceTypes.map((s) => (
                       <option key={s} value={s}>
                         {s}
                       </option>
@@ -261,7 +234,7 @@ export default function ContactPage() {
                     htmlFor="message"
                     className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground"
                   >
-                    Message
+                    {t.messageLabel}
                   </label>
                   <textarea
                     id="message"
@@ -271,7 +244,7 @@ export default function ContactPage() {
                     value={fields.message}
                     onChange={update('message')}
                     className="border-b border-primary bg-transparent py-3 text-[16px] leading-relaxed text-foreground outline-none transition-colors placeholder:text-muted-foreground/50 focus:border-accent"
-                    placeholder="Describe the engagement, dates, and any protocol considerations."
+                    placeholder={t.messagePlaceholder}
                     data-testid="input-message"
                   />
                 </div>
@@ -281,10 +254,10 @@ export default function ContactPage() {
                   className="di-underline group mt-12 flex items-center gap-3 text-[14px] uppercase tracking-[0.18em] text-foreground"
                   data-testid="button-submit-inquiry"
                 >
-                  Compose Inquiry Email
+                  {t.submit}
                   <ArrowRight
                     size={16}
-                    className="transition-transform group-hover:translate-x-1"
+                    className="transition-transform group-hover:translate-x-1 rtl:-scale-x-100 rtl:group-hover:-translate-x-1"
                   />
                 </button>
               </form>
@@ -294,34 +267,34 @@ export default function ContactPage() {
           {/* Offices */}
           <Reveal delay={0.1}>
             <div className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
-              CONTACT INFORMATION
+              {t.infoLabel}
             </div>
             <div className="mt-3 h-px w-[60px] bg-accent" />
 
             <div className="mt-12 space-y-12">
               <div>
-                <h3 className="font-serif text-[24px] text-foreground md:text-[28px]">
-                  Global Headquarters
+                <h3 className={`font-serif text-[24px] text-foreground md:text-[28px] ${headingFontItalic}`}>
+                  {t.headquartersTitle}
                 </h3>
                 <div className="mt-3 space-y-1">
                   <p className="text-[14px] leading-relaxed text-muted-foreground">
-                    Available for global deployments and remote engagements.
+                    {t.headquartersDesc}
                   </p>
                   <p className="mt-4 text-[15px] text-foreground">
-                    +1 619-752-5604
+                    {INQUIRY_PHONE}
                   </p>
                 </div>
               </div>
 
               <div className="border-t border-border pt-8">
                 <p className="text-[13px] uppercase tracking-[0.15em] text-muted-foreground">
-                  General Inquiries
+                  {t.generalInquiries}
                 </p>
                 <a
-                  href="mailto:info@rmlingo.com"
+                  href={`mailto:${INQUIRY_EMAIL}`}
                   className="mt-2 inline-block text-[15px] text-foreground underline decoration-accent underline-offset-4"
                 >
-                  info@rmlingo.com
+                  {INQUIRY_EMAIL}
                 </a>
               </div>
             </div>

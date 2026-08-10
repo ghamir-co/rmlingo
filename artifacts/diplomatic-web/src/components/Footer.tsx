@@ -1,4 +1,8 @@
+import { useI18n } from '@/i18n'
+
 export default function Footer() {
+  const { dict } = useI18n()
+
   return (
     <footer className="mt-24">
       {/* Thin full-width gold rule */}
@@ -9,7 +13,9 @@ export default function Footer() {
         <div className="text-[12px] text-muted-foreground md:text-start">
           © {new Date().getFullYear()} RMLingo
           <br />
-          <span className="mt-1 inline-block text-[11px]">Founded 2003</span>
+          <span className="mt-1 inline-block text-[11px]">
+            {dict.footer.founded}
+          </span>
         </div>
 
         {/* Center — wordmark */}

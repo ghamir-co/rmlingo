@@ -4,8 +4,9 @@ import App from './App'
 
 import './index.css'
 
-// RTL readiness: restore the visitor's saved language/direction before the
-// first paint so an Arabic build can be dropped in with no layout work.
+// Language/direction: the site defaults to Arabic (RTL) for the MENA market.
+// A returning visitor's saved choice is restored before the first paint so
+// the correct direction renders with no flash of the wrong layout.
 const savedLang = (() => {
   try {
     return localStorage.getItem('rmlingo-lang')
@@ -13,7 +14,7 @@ const savedLang = (() => {
     return null
   }
 })()
-const lang = savedLang === 'ar' ? 'ar' : 'en'
+const lang = savedLang === 'en' ? 'en' : 'ar'
 document.documentElement.lang = lang
 document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
 

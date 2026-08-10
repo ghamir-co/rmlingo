@@ -169,10 +169,14 @@ const WORDS: ScriptWord[] = [
 ]
 
 export default function ScriptBackground() {
+  // Decorative only: pinned to physical LTR coordinates so the RTL page
+  // layout never mirrors the layered scripts. The word mix is intentionally
+  // bilingual (Arabic + English) and direction-independent.
   return (
     <div
       className="script-palimpsest absolute inset-0 overflow-hidden pointer-events-none z-0 select-none"
       aria-hidden="true"
+      dir="ltr"
     >
       {WORDS.map((w, i) => (
         <span

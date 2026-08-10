@@ -1,45 +1,24 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'wouter'
 import { Menu, X, Languages } from 'lucide-react'
-
-const LINKS = [
-  { label: 'Services', href: '/services' },
-  { label: 'Insights', href: '/insights' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
-]
-
-type Lang = 'en' | 'ar'
-
-function applyLang(lang: Lang) {
-  document.documentElement.lang = lang
-  document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr'
-  try {
-    localStorage.setItem('rmlingo-lang', lang)
-  } catch {
-    /* private mode */
-  }
-}
+import { useI18n } from '@/i18n'
 
 export default function Nav() {
+  const { dict, toggle } = useI18n()
   const [open, setOpen] = useState(false)
-  const [lang, setLang] = useState<Lang>(() =>
-    typeof document !== 'undefined' && document.documentElement.lang === 'ar'
-      ? 'ar'
-      : 'en',
-  )
   const [location] = useLocation()
+
+  const LINKS = [
+    { label: dict.nav.services, href: '/services' },
+    { label: dict.nav.insights, href: '/insights' },
+    { label: dict.nav.about, href: '/about' },
+    { label: dict.nav.contact, href: '/contact' },
+  ]
 
   const isActive = (href: string) => {
     const path = href.split('#')[0]
     if (path === '/') return location === '/'
     return location === path
-  }
-
-  const toggleLang = () => {
-    const next: Lang = lang === 'ar' ? 'en' : 'ar'
-    setLang(next)
-    applyLang(next)
   }
 
   return (
@@ -53,10 +32,7 @@ export default function Nav() {
           onClick={() => setOpen(false)}
         >
           <span className="flex items-center gap-2.5">
-            <span
-              className="star-eight shrink-0"
-              aria-hidden="true"
-            />
+            <span className="star-eight shrink-0" aria-hidden="true" />
             <span
               className="font-serif text-[15px] small-caps leading-none tracking-[0.12em] text-foreground"
               style={{ fontVariant: 'small-caps' }}
@@ -71,31 +47,31 @@ export default function Nav() {
         <nav className="hidden items-center gap-9 md:flex">
           {LINKS.map((l) => (
             <Link
-              key={l.label}
+              key={l.href}
               href={l.href}
               className={`di-underline text-[13px] uppercase tracking-[0.18em] transition-colors ${
                 isActive(l.href)
                   ? 'text-foreground'
                   : 'text-foreground/70 hover:text-foreground'
               }`}
-              data-testid={`link-nav-${l.label.toLowerCase()}`}
+              data-testid={`link-nav-${l.href.replace(/\W/g, '')}`}
             >
               {l.label}
             </Link>
           ))}
           <button
             type="button"
-            onClick={toggleLang}
+            onClick={toggle}
             className="di-underline flex items-center gap-1.5 text-[11px] uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground"
             data-testid="button-toggle-lang"
-            aria-label="Toggle language direction"
-            title="Switch between English and Arabic layout"
+            aria-label="Toggle language"
+            title="Switch between Arabic and English"
           >
             <Languages size={13} aria-hidden="true" />
-            {lang === 'ar' ? 'EN' : 'عربي'}
+            {dict.nav.toggleDesktop}
           </button>
           <span className="ms-4 uppercase tracking-[0.2em] text-muted-foreground text-[11px]">
-            Est. 2003
+            {dict.nav.est}
           </span>
         </nav>
 
@@ -114,26 +90,26 @@ export default function Nav() {
         <nav className="flex flex-col gap-5 border-t border-border bg-background px-6 py-6 md:hidden">
           {LINKS.map((l) => (
             <Link
-              key={l.label}
+              key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
               className="text-[13px] uppercase tracking-[0.18em] text-foreground"
-              data-testid={`link-nav-mobile-${l.label.toLowerCase()}`}
+              data-testid={`link-nav-mobile-${l.href.replace(/\W/g, '')}`}
             >
               {l.label}
             </Link>
           ))}
           <button
             type="button"
-            onClick={toggleLang}
+            onClick={toggle}
             className="flex items-center gap-2 text-start text-[12px] uppercase tracking-[0.18em] text-muted-foreground"
             data-testid="button-toggle-lang-mobile"
           >
             <Languages size={14} aria-hidden="true" />
-            {lang === 'ar' ? 'English' : 'العربية'}
+            {dict.nav.toggleMobile}
           </button>
           <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-            Est. 2003
+            {dict.nav.est}
           </span>
         </nav>
       )}

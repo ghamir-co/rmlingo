@@ -1,0 +1,364 @@
+{
+  "nav": {
+    "services": "Services",
+    "insights": "Insights",
+    "about": "About",
+    "contact": "Contact",
+    "est": "Est. 2003",
+    "toggleDesktop": "عربي",
+    "toggleMobile": "العربية"
+  },
+  "home": {
+    "eyebrow": "Professional Language Services",
+    "heroLine1": "The Language",
+    "heroLine2": "of Diplomacy,",
+    "heroLine3": "Precisely Rendered.",
+    "heroDesc": "Since 2003, providing exact linguistic execution across borders. Specialized in high-stakes Arabic-English pairing and multilingual global delivery.",
+    "ctaServices": "Explore Our Services →",
+    "ctaContact": "Request Consultation →",
+    "vertical": "Serving Global Institutions Worldwide",
+    "facts": [
+      "Since 2003",
+      "Arabic ↔ English Core",
+      "Global Delivery"
+    ],
+    "whatWeDo": "What We Do",
+    "services": [
+      {
+        "name": "Conference Interpretation",
+        "desc": "Simultaneous, consecutive, and sign-language interpretation for diplomatic summits and bilateral negotiations, delivered remotely or on-site."
+      },
+      {
+        "name": "Document Translation",
+        "desc": "Certified translation of treaties, legal instruments, and institutional communications bridging precise cultural nuances."
+      },
+      {
+        "name": "Media Accessibility",
+        "desc": "Verbatim transcription, captioning, subtitling, dubbing, and voiceover with strict confidentiality protocols."
+      },
+      {
+        "name": "Consultation & Localization",
+        "desc": "Strategic language advisory, cultural relocation support, and seamless adaptation for international audiences."
+      }
+    ],
+    "trustedTitle": "Trusted by Leading Institutions",
+    "trusted": [
+      {
+        "name": "United Nations Development Programme",
+        "alt": "United Nations Development Programme logo"
+      },
+      {
+        "name": "The World Bank",
+        "alt": "The World Bank logo"
+      },
+      {
+        "name": "Red Cross",
+        "alt": "Red Cross logo"
+      },
+      {
+        "name": "USAID / Tetra Tech",
+        "alt": "Tetra Tech and USAID logos"
+      }
+    ]
+  },
+  "servicesPage": {
+    "label": "Services",
+    "title": "A full spectrum of linguistic services, rendered to institutional standard.",
+    "subtitle": "From the General Assembly floor to a closed bilateral, every engagement meets the same threshold: indistinguishable from the original.",
+    "services": [
+      {
+        "name": "Interpretation Services",
+        "desc": "Comprehensive interpretation solutions spanning simultaneous, consecutive, and whispered (chuchotage) modes. We deploy accredited linguists for high-stakes diplomatic gatherings, available via secure remote platforms or deployed on-site globally. Including certified sign-language interpretation for inclusive international forums."
+      },
+      {
+        "name": "Document Translation",
+        "desc": "Certified translation of treaties, diplomatic notes, legal instruments, protocols, and institutional communications. Every document carries the weight of its original register, reviewed by linguists with subject-matter expertise in international law and diplomacy."
+      },
+      {
+        "name": "Editing & Proofreading",
+        "desc": "Rigorous editorial review enforcing institutional style guides and terminological consistency. We ensure translated outputs maintain absolute fidelity to the source intent, guaranteeing public-facing and internal communications are flawless."
+      },
+      {
+        "name": "Media Accessibility",
+        "desc": "Secure, verbatim transcription of proceedings, testimony, and confidential deliberations. We also provide professional captioning, subtitling, dubbing, and voiceover for multimedia assets, bridging the gap between spoken word and global audience comprehension."
+      },
+      {
+        "name": "Localization & Relocation",
+        "desc": "Beyond literal translation, we adapt institutional communications, public diplomacy materials, and software for target audiences. Additionally, we provide comprehensive linguistic relocation support for staff moving across regions."
+      },
+      {
+        "name": "Consultation & Training",
+        "desc": "Strategic language advisory for cross-border communications, negotiation preparation, and protocol-sensitive messaging. We offer specialized training for principals and teams to navigate complex linguistic environments effectively."
+      },
+      {
+        "name": "Technical Support & Equipment",
+        "desc": "End-to-end technical deployment for multilingual events. We provide and operate soundproof booths, receiver systems, and digital interpretation platforms, overseen by experienced on-site engineers ensuring zero interruption."
+      }
+    ],
+    "languagesLabel": "Languages Served",
+    "languagesTitle": "Expertise anchored in Arabic and English, extending across the globe.",
+    "families": [
+      {
+        "family": "Primary Focus",
+        "languages": [
+          "Arabic",
+          "English"
+        ]
+      },
+      {
+        "family": "Global Multilingual",
+        "languages": [
+          "French",
+          "Spanish",
+          "Portuguese",
+          "German",
+          "Russian",
+          "Mandarin"
+        ]
+      },
+      {
+        "family": "Regional Specialized",
+        "languages": [
+          "Farsi",
+          "Pashto",
+          "Hebrew",
+          "Amharic",
+          "Tigrinya",
+          "Somali"
+        ]
+      }
+    ],
+    "ctaLine": "Engagements begin with a conversation.",
+    "ctaLink": "Request Consultation →"
+  },
+  "aboutPage": {
+    "label": "About",
+    "quote": "“Precision is not merely a technical standard. It is a diplomatic imperative.”",
+    "founded": "Founded 2003",
+    "narrative1": "RMLingo was established in 2003 by Dr. Rawan Manna to provide interpretation and translation worthy of the word “diplomatic.” Recognizing that global institutions rely on nuance and precision, she built a practice dedicated to absolute fidelity.",
+    "narrative2": "Rooted in deep expertise with the Arabic-English pairing, the firm rapidly expanded into a multilingual global language service. Today, whether delivering remote simultaneous interpretation for a UN session or translating a pivotal treaty, RMLingo serves the organizations that shape the world.",
+    "figureCaption": "On-site interpretation in practice: receivers, briefing documents, and prepared terminology at a working session.",
+    "figureAlt": "A delegate at a regional summit in the Middle East holds Arabic-language conference papers beside a wireless interpretation receiver and earpiece.",
+    "valuesLabel": "What We Hold",
+    "values": [
+      {
+        "label": "Precision",
+        "desc": "Every rendering is measured against the original utterance. A misplaced register can alter a negotiation; a softened verb can redraw a boundary. We treat exactness as a diplomatic instrument, not a stylistic preference."
+      },
+      {
+        "label": "Confidentiality",
+        "desc": "Our linguists operate under the same discretion expected of the principals they serve. Protocols, clearances, and chain-of-custody are not add-ons — they are the conditions under which we work."
+      },
+      {
+        "label": "Cultural Fluency",
+        "desc": "Language is the surface of culture. We render not only what is said but what is meant, carrying idiom, honorific, and historical weight across the distance between one worldview and another."
+      }
+    ],
+    "leadershipLabel": "Leadership",
+    "leader": {
+      "name": "Dr. Rawan Manna",
+      "title": "Founder & Managing Director",
+      "bio": "Founded RMLingo in 2003. A renowned language specialist orchestrating high-stakes institutional engagements across the globe, with particular expertise bridging Arabic and English diplomatic contexts."
+    }
+  },
+  "contactPage": {
+    "label": "Contact",
+    "title": "Begin a Conversation",
+    "subtitle": "Write to us by email or telephone. Every engagement begins with a direct conversation.",
+    "formIntro": "Complete the details below and we will compose the message in your email application, ready for you to send to {email}.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Full name",
+    "orgLabel": "Organization",
+    "orgPlaceholder": "Mission, agency, or institution",
+    "pairLabel": "Language Pair",
+    "pairPlaceholder": "Select a language pair",
+    "serviceLabel": "Service Type",
+    "servicePlaceholder": "Select a service",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Describe the engagement, dates, and any protocol considerations.",
+    "pairs": [
+      "Arabic ↔ English",
+      "French ↔ English",
+      "Spanish ↔ English",
+      "Mandarin ↔ English",
+      "Russian ↔ English",
+      "German ↔ English",
+      "Portuguese ↔ English",
+      "Farsi ↔ English",
+      "Hebrew ↔ English",
+      "Amharic ↔ English",
+      "Other (specify in message)"
+    ],
+    "serviceTypes": [
+      "Interpretation (Simultaneous/Consecutive)",
+      "Interpretation (Sign-Language)",
+      "Document Translation",
+      "Editing & Proofreading",
+      "Media Accessibility (Transcription/Captioning)",
+      "Media Accessibility (Subtitling/Dubbing)",
+      "Consultation & Training",
+      "Localization & Relocation",
+      "Event Technical Support & Equipment"
+    ],
+    "submit": "Compose Inquiry Email",
+    "preparedTitle": "Your email is ready to send.",
+    "preparedBody1": "We have opened a prefilled message to {email} in your email application. Your inquiry reaches RMLingo once you send it from there.",
+    "preparedBody2": "If nothing opened, use the direct link below, or telephone {phone} for urgent interpretation needs.",
+    "openDraft": "Open the email draft →",
+    "editDetails": "← Edit the details",
+    "infoLabel": "Contact Information",
+    "headquartersTitle": "Global Headquarters",
+    "headquartersDesc": "Available for global deployments and remote engagements.",
+    "generalInquiries": "General Inquiries"
+  },
+  "insightsPage": {
+    "label": "Insights & Experience",
+    "title": "Perspective born of practice. Trust earned through precision.",
+    "subtitle": "Explore the work that shapes our standards and our reflections on the evolving landscape of global language services.",
+    "experienceLabel": "Experience",
+    "experienceTitle": "Built for the work that crosses borders.",
+    "experience": [
+      {
+        "title": "United Nations Development Programme",
+        "summary": "A credibility anchor for the multilingual meetings, field-facing communication, and technical coordination international development work demands.",
+        "source": "United Nations Development Programme (UNDP)",
+        "role": "International development",
+        "logoAlt": "United Nations Development Programme logo"
+      },
+      {
+        "title": "The World Bank",
+        "summary": "A reference point for exact, context-aware language work across global financial and institutional conversations.",
+        "source": "The World Bank",
+        "role": "Global finance",
+        "logoAlt": "The World Bank logo"
+      },
+      {
+        "title": "Red Cross",
+        "summary": "A standard for language support where clarity, cultural sensitivity, and responsiveness matter in humanitarian settings.",
+        "source": "Red Cross",
+        "role": "Humanitarian response",
+        "logoAlt": "Red Cross logo"
+      },
+      {
+        "title": "USAID & Tetra Tech",
+        "summary": "Experience that reflects the needs of multilingual programme delivery, practical localization, and diverse regional audiences.",
+        "source": "USAID / Tetra Tech",
+        "role": "International programmes",
+        "logoAlt": "Tetra Tech and USAID logos"
+      }
+    ],
+    "publishedLabel": "Published Insights",
+    "readMore": "Read Article →"
+  },
+  "articlePage": {
+    "back": "← Back to Insights",
+    "ctaTitle": "Planning an engagement that crosses languages?",
+    "ctaLink": "Begin a conversation →",
+    "continueReading": "Continue Reading",
+    "readArticle": "Read article →"
+  },
+  "footer": {
+    "founded": "Founded 2003"
+  },
+  "notFound": {
+    "title": "404 Page Not Found",
+    "subtitle": "Did you forget to add the page to the router?"
+  },
+  "articles": {
+    "benefits-of-real-time-interpretation": {
+      "title": "The Benefits of Real-Time Interpretation Services for International Businesses",
+      "date": "February 3, 2025",
+      "category": "Interpretation",
+      "excerpt": "How live interpretation removes friction from negotiations, conferences, and customer support — and why accuracy and cultural context matter as much as speed.",
+      "imageAlt": "Delegates from across the Middle East and North Africa seated around a conference table at a multilingual summit in Dubai, using interpretation headsets.",
+      "sections": [
+        {
+          "heading": "Breaking Language Barriers in Global Communication",
+          "body": "In today’s interconnected world, businesses operate across multiple countries and cultures. Real-time interpretation services ensure seamless communication between international partners, clients, and employees. By eliminating language barriers, businesses can negotiate deals, conduct meetings, and collaborate effectively without misunderstandings."
+        },
+        {
+          "heading": "Enhancing Business Efficiency and Professionalism",
+          "body": "Live interpretation allows for smooth interactions during conferences, negotiations, and customer support. It fosters a professional environment where all parties can understand and respond instantly, avoiding delays caused by language differences. This efficiency improves productivity and strengthens relationships."
+        },
+        {
+          "heading": "Expanding Market Reach and Customer Engagement",
+          "body": "Businesses that use real-time interpretation can reach broader audiences and serve diverse markets. Providing multilingual customer support helps build trust and credibility, making international clients feel valued and understood. This can lead to increased customer satisfaction and brand loyalty."
+        },
+        {
+          "heading": "Ensuring Accuracy and Cultural Sensitivity",
+          "body": "Professional interpreters provide not only accurate translations but also cultural context, helping businesses avoid misinterpretations or offensive remarks. Understanding cultural nuances enhances global business relations and helps companies adapt their messaging for different regions."
+        },
+        {
+          "heading": "Supporting Legal and Compliance Requirements",
+          "body": "Many industries, such as healthcare, finance, and law, require precise language interpretation to meet regulatory standards. Real-time interpreters help businesses comply with legal requirements, ensuring contracts, policies, and discussions are correctly understood by all parties involved."
+        },
+        {
+          "heading": "In Summary",
+          "body": "By investing in real-time interpretation services, international businesses can enhance communication, efficiency, and market expansion, ultimately driving global success."
+        }
+      ]
+    },
+    "choosing-a-subtitling-and-dubbing-provider": {
+      "title": "How to Choose the Right Provider for Your Subtitling and Dubbing Needs",
+      "date": "February 3, 2025",
+      "category": "Media Accessibility",
+      "excerpt": "A practical framework for evaluating quality, technology, turnaround, and support when adapting multimedia for international audiences.",
+      "imageAlt": "Audio editing workstation with waveform software preparing Arabic subtitling, dubbing, and voiceover for regional broadcast.",
+      "sections": [
+        {
+          "heading": "Understanding Your Project Requirements",
+          "body": "Before selecting a subtitling and dubbing provider, define your project’s needs. Consider the language pairs, target audience, and the type of content you are localizing. Whether it’s films, corporate videos, or e-learning materials, choosing a provider with expertise in your specific industry ensures better results."
+        },
+        {
+          "heading": "Evaluating Quality and Accuracy",
+          "body": "High-quality subtitles and dubbing require precise translation and synchronization. Look for providers who employ native-speaking linguists and professional voice actors. Ask for samples or previous work to assess their accuracy, fluency, and cultural adaptation. Poorly translated or mistimed subtitles can negatively impact audience engagement."
+        },
+        {
+          "heading": "Checking Technology and Tools Used",
+          "body": "A reliable provider should use advanced software for accurate timing and lip-syncing in dubbing. Automated tools can assist, but human expertise remains essential for natural-sounding dialogue and properly synchronized subtitles. Ensure they offer high-definition audio recording and professional editing to maintain top quality."
+        },
+        {
+          "heading": "Assessing Turnaround Time and Scalability",
+          "body": "If you have tight deadlines or multiple projects, choose a provider known for efficient delivery and scalability. A company with a streamlined workflow, skilled team, and quality control measures can handle high-volume requests while maintaining accuracy and consistency."
+        },
+        {
+          "heading": "Comparing Pricing and Customer Support",
+          "body": "Cost is an important factor, but quality should never be compromised. Get quotes from different providers and compare their pricing structures. Also, consider their customer service — responsive and transparent providers can address concerns promptly and ensure a smooth process."
+        },
+        {
+          "heading": "In Summary",
+          "body": "By carefully evaluating these factors, you can find a subtitling and dubbing provider that delivers high-quality results, ensuring your content is accessible and engaging for a global audience."
+        }
+      ]
+    },
+    "professional-translation-in-global-communication": {
+      "title": "The Role of Professional Translation in Global Communication",
+      "date": "February 3, 2025",
+      "category": "Translation",
+      "excerpt": "Why accurate translation protects meaning, tone, and intent — and where localization and interpretation carry the message the rest of the way.",
+      "imageAlt": "Reference books, legal documents, and translation glossaries on a desk, reflecting professional Arabic and English translation work.",
+      "sections": [
+        {
+          "heading": "The Importance of Accurate Translation",
+          "body": "In today’s interconnected world, businesses and individuals frequently interact across different languages and cultures. Professional translation ensures clear communication, preventing misunderstandings that could impact relationships, business transactions, and international collaborations. Accurate translations help maintain the original meaning, tone, and intent, ensuring messages resonate with the target audience."
+        },
+        {
+          "heading": "Enhancing Business Expansion",
+          "body": "Companies looking to expand globally rely on translation services to adapt marketing materials, legal documents, and customer communications for international markets. A well-translated website, product descriptions, and service information can help businesses connect with customers worldwide, increasing trust and engagement."
+        },
+        {
+          "heading": "The Role of Localization",
+          "body": "Translation alone is not always enough — localization goes a step further by adapting content to suit cultural and linguistic nuances. This includes modifying images, currency formats, date structures, and idiomatic expressions to ensure content feels native to the target audience. Localization enhances user experience and strengthens brand credibility."
+        },
+        {
+          "heading": "The Power of Interpretation Services",
+          "body": "For real-time communication, interpretation services are essential. Whether it’s a business meeting, conference, or legal proceeding, professional interpreters ensure smooth conversations across different languages. Simultaneous and consecutive interpretation help bridge language barriers in crucial situations where accuracy and speed are required."
+        },
+        {
+          "heading": "Choosing the Right Language Service Provider",
+          "body": "Selecting the right provider for translation and localization services is key to achieving effective communication. A qualified team of linguists, industry experts, and localization specialists ensures that your message remains authentic and impactful. Look for providers with experience, quality assurance processes, and a deep understanding of cultural differences."
+        }
+      ]
+    }
+  }
+}
