@@ -233,7 +233,10 @@
     "readArticle": "Read article →"
   },
   "footer": {
-    "founded": "Founded 2003"
+    "founded": "Founded 2003",
+    "tagline": "Precision language services for institutions that cannot afford ambiguity.",
+    "navigate": "Navigate",
+    "motto": "Precision · Confidentiality · Fluency"
   },
   "notFound": {
     "title": "404 Page Not Found",

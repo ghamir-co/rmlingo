@@ -171,19 +171,21 @@ export default function HomePage() {
       {/* TRUSTED BY — real, documented client relationships (see CONTENT_AUDIT.md) */}
       <section className="relative border-y border-border/60 px-6 py-14 md:px-12">
         <div className="mx-auto max-w-[1400px]">
-          <div className="flex flex-wrap items-center gap-x-12 gap-y-6">
-            <span className="shrink-0 text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
+          <div className="flex flex-col items-center gap-6 text-center">
+            <span className="text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
               {t.trustedByLabel}
             </span>
-            {t.trusted.map((logo) => (
-              <img
-                key={logo.name}
-                src={`${import.meta.env.BASE_URL}${logo.logo}`}
-                alt={logo.alt}
-                loading="lazy"
-                className="h-6 w-auto max-w-[120px] object-contain opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0 md:h-7"
-              />
-            ))}
+            <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+              {t.trusted.map((logo) => (
+                <img
+                  key={logo.name}
+                  src={`${import.meta.env.BASE_URL}${logo.logo}`}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className="h-6 w-auto max-w-[120px] object-contain opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0 md:h-7"
+                />
+              ))}
+            </div>
           </div>
 
           <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-8">
