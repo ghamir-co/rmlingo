@@ -1,6 +1,6 @@
 ---
 name: Content integrity fix, octagram bug, and deployment status
-description: What was wrong with the trust signals/field photo/hero medallion, what's fixed, and current push/deploy state.
+description: What was wrong with the trust signals/field photo/hero medallion, what's fixed. LIVE IN PRODUCTION at rmlingo.com.
 ---
 
 # Trust signals and field photo were real business assets, not fabrications — but check before reusing
@@ -39,12 +39,17 @@ circularly dependent and collapse near zero. Fixed by sizing `.octagram` with `c
 this same pattern (`width: 100%` on a child of a `justify-self-end`/`justify-self-start` grid
 item) anywhere else in this codebase.
 
-# Current state (2026-08-11)
+# Current state (2026-08-11) — LIVE IN PRODUCTION
 
 Pushed to `origin/main` at `72f76e3`. Deployed to **https://silent-maple-s7tr.here.now/**
-(permanent, authenticated via `~/.herenow/credentials`, `--spa` for client-side routing). Full
-history of the content fix is in `CONTENT_AUDIT.md` at the repo root. `.playwright-mcp/` is now
-gitignored (tool cache from the Playwright MCP server, not source).
+(permanent, authenticated via `~/.herenow/credentials`, `--spa` for client-side routing), and that
+site is now mapped to the real production domain **rmlingo.com** — this is the actual live
+business website now, replacing the previous WordPress site at that domain (verified: HTTPS 200,
+serving this build). Full history of the content fix is in `CONTENT_AUDIT.md` at the repo root.
+`.playwright-mcp/` is now gitignored (tool cache from the Playwright MCP server, not source).
+
+**Any future change to this repo is a production change** — treat with the same care as editing a
+live site directly, not a draft/prototype.
 
 Still open, needs the business owner: the sibling `dip-int` project's contact email situation (see
 its own memory) — this project (`rmlingo`) already uses the confirmed real `info@rmlingo.com`.
