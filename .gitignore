@@ -3,6 +3,9 @@
 # compiled output
 dist
 tmp
+
+# tool caches
+.playwright-mcp/
 out-tsc
 *.tsbuildinfo
 .expo

@@ -431,9 +431,13 @@
 
   /* Gold octagram medallion — layered eight-pointed star ornament */
   .octagram {
+    /* Fixed viewport-based size, not a percentage: this element's parent has
+       `justify-self-end` in a grid track, which makes the parent shrink-to-fit
+       its content instead of stretching to the track width. A percentage width
+       here would depend on that content-sized parent while the parent's size
+       depends on this element, collapsing both to ~0. */
     position: relative;
-    width: 100%;
-    max-width: 26rem;
+    width: clamp(220px, 24vw, 26rem);
     aspect-ratio: 1;
     display: grid;
     place-items: center;

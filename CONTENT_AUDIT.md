@@ -27,13 +27,26 @@ and trust-claim reference in `src/` for the RMLingo site
 | `public/media/insights/subtitling-and-dubbing.jpg`                                            | Same provenance as above.                                                                                                                                                                                                                                                                                  |
 | `public/favicon.svg`, `public/sw.js`, `public/robots.txt`, `public/sitemap.xml`, `index.html` | Checked: no legacy source brand, no fabricated claims; canonical `rmlingo.com` throughout.                                                                                                                                                                                                                 |
 
+## Correction — 2026-08-11
+
+**Founder name: "Dr. Rawan Manna" is correct, not a discrepancy.** The earlier note below was
+based on a one-line auto-generated summary in `CONTENT_MAP_*.md` ("Team photos: Rania (founder)"),
+which turned out to be an imprecise inference from an image filename. The actual scraped page copy
+(`attached_assets/pages_*.zip` → `pages/about.md`, `pages/testimonials.md`) states directly, twice:
+"RM Lingo was founded in 2003 by Dr. Rawan Manna, Ph.D." **Dr. Rania Filfil is a different, real
+person** — a named strategic partner with her own bio (master's + doctorate, 30 years experience),
+not the founder. No change needed to the site copy; flagging this only to correct the record from
+the first pass.
+
+**Trust logos restored with real backing.** The same scrape's `pages/testimonials.md` contains
+real, named, dated recommendation letters (with linked PDFs hosted on rmlingo.com) from named
+individuals at UNDP, World Bank Group, Norwegian Red Cross, and Tetra Tech — confirming these are
+genuine, documented client relationships, not assumed ones. Logos restored from git history
+(recovered from the pre-removal commit); see the rebuilt trust section for details.
+
 ## Other observations (not fixed here)
 
-1. **Founder name discrepancy.** `aboutPage.leader` names "Dr. Rawan Manna" with a
-   "Founder & Managing Director" title, but the source scrape of the business's
-   live site names the founder "Rania". The name/title/credential on the site is
-   **unverified** — the owner should confirm the exact legal name, title, and
-   whether the "Dr." credential is accurate before this is treated as fact.
+1. ~~**Founder name discrepancy.**~~ Resolved above — was not a real discrepancy.
 2. **Favicon.** `public/favicon.svg` is a plain `#FF3C00` square placeholder, not
    on-brand. Outside this directive's scope, but worth replacing with the
    RMLingo mark.
@@ -47,8 +60,9 @@ and trust-claim reference in `src/` for the RMLingo site
    flagged: if the owner wants zero institutional name-drops, reword to remove
    "UN session".
 
-## Needed from the business owner (no fabrication to fill gaps)
+## Needed from the business owner
 
-- Real client logos or written testimonials with permission, if the "trusted by"
-  space is to be filled again.
-- Confirmation of the founder's name/title/credential.
+- ~~Real client logos or written testimonials~~ — resolved, see above.
+- ~~Confirmation of the founder's name/title/credential~~ — resolved, see above.
+- Still open: confirmation of `+1 619-752-5604` / `info@rmlingo.com` as current (per prior project
+  memory), and a decision on the "UN session" copy (item 4 above).

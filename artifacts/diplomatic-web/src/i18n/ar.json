@@ -36,6 +36,39 @@
         "name": "الاستشارات والتوطين اللغوي",
         "desc": "استشارات لغوية استراتيجية، ودعم للانتقال بين الثقافات، وتكيّف سلس مع الجمهور الدولي."
       }
+    ],
+    "trustedByLabel": "موضع ثقة",
+    "trusted": [
+      { "name": "برنامج الأمم المتحدة الإنمائي", "logo": "media/credibility/undp.png", "alt": "شعار برنامج الأمم المتحدة الإنمائي" },
+      { "name": "البنك الدولي", "logo": "media/credibility/world-bank.png", "alt": "شعار البنك الدولي" },
+      { "name": "الصليب الأحمر النرويجي", "logo": "media/credibility/red-cross.png", "alt": "شعار الصليب الأحمر النرويجي" },
+      { "name": "USAID / Tetra Tech", "logo": "media/credibility/tetra-tech-usaid.png", "alt": "شعارا Tetra Tech وUSAID" }
+    ],
+    "testimonials": [
+      {
+        "quote": "The services of RM Lingo have always been delivered in a very professional manner and with the utmost attention to detail and quality.",
+        "name": "Linda Öhman",
+        "org": "الصليب الأحمر النرويجي",
+        "year": "2016"
+      },
+      {
+        "quote": "RM Lingo has on several occasions provided our various projects with high-quality interpretation services... Feedback received has always been very positive.",
+        "name": "Nadder Atta",
+        "org": "برنامج الأمم المتحدة الإنمائي",
+        "year": "2024"
+      },
+      {
+        "quote": "She far exceeded my already high expectations. Ms. Manna demonstrated a very high degree of professionalism, dedication and — critically — competence.",
+        "name": "Stefan Emblad",
+        "org": "مجموعة البنك الدولي",
+        "year": "2023"
+      },
+      {
+        "quote": "Their support in all instances has been exceptional; both in terms of the quality of the linguistic services provided and the professionalism with which they work.",
+        "name": "Deanna Aubrey",
+        "org": "Communities Thrive Project, Tetra Tech",
+        "year": "2025"
+      }
     ]
   },
   "servicesPage": {

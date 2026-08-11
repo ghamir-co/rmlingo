@@ -168,6 +168,47 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* TRUSTED BY — real, documented client relationships (see CONTENT_AUDIT.md) */}
+      <section className="relative border-y border-border/60 px-6 py-14 md:px-12">
+        <div className="mx-auto max-w-[1400px]">
+          <div className="flex flex-wrap items-center gap-x-12 gap-y-6">
+            <span className="shrink-0 text-[11px] uppercase tracking-[0.15em] text-muted-foreground">
+              {t.trustedByLabel}
+            </span>
+            {t.trusted.map((logo) => (
+              <img
+                key={logo.name}
+                src={`${import.meta.env.BASE_URL}${logo.logo}`}
+                alt={logo.alt}
+                loading="lazy"
+                className="h-6 w-auto max-w-[120px] object-contain opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0 md:h-7"
+              />
+            ))}
+          </div>
+
+          <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-8">
+            {t.testimonials.map((q) => (
+              <Reveal key={q.name}>
+                <div className="border-t border-accent pt-5">
+                  <blockquote
+                    className={`text-[15px] leading-relaxed text-foreground ${isAr ? 'font-sans' : 'font-serif italic'}`}
+                    dir="ltr"
+                  >
+                    “{q.quote}”
+                  </blockquote>
+                  <figcaption className="mt-4 text-[12px] leading-snug text-muted-foreground">
+                    <span className="font-medium text-foreground">
+                      {q.name}
+                    </span>
+                    , {q.org}, {q.year}
+                  </figcaption>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES — elevated cards */}
       <section className="relative px-6 py-24 md:px-12">
         <div className="mx-auto max-w-[1400px]">
